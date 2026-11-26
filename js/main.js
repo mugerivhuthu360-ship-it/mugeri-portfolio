@@ -35,4 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Keep the footer year current
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  // Progressive scroll reveal
+  document.body.classList.add("js");
+  const targets = document.querySelectorAll("section, .card, .media-item, .stat, .bento-cell");
+  targets.forEach(function (el) { el.classList.add("reveal"); });
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    targets.forEach(function (el) { io.observe(el); });
+  } else {
+    targets.forEach(function (el) { el.classList.add("is-visible"); });
+  }
 });
