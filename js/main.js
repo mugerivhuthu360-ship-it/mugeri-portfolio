@@ -36,6 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  // Back-to-top button
+  const btt = document.createElement("button");
+  btt.className = "back-to-top";
+  btt.setAttribute("aria-label", "Back to top");
+  btt.textContent = "↑";
+  document.body.appendChild(btt);
+  btt.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 600) btt.classList.add("is-visible");
+    else btt.classList.remove("is-visible");
+  }, { passive: true });
+
   // Progressive scroll reveal
   document.body.classList.add("js");
   const targets = document.querySelectorAll("section, .card, .media-item, .stat, .bento-cell");

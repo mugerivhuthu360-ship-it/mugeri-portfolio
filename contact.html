@@ -16,7 +16,9 @@
 <meta property="og:description" content="Contact Mugeri Vhuthuhawe for engineering opportunities, live keyboard work, session recording and collaborations.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/contact.html">
-<meta property="og:image" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/assets/og-image.png">
+<meta property="og:image" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/assets/og-image.png"
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact — Mugeri Vhuthuhawe">
 <meta name="twitter:description" content="Contact Mugeri Vhuthuhawe for engineering opportunities, live keyboard work, session recording and collaborations."></head>
@@ -35,6 +37,7 @@
         <li><a href="projects.html">Projects</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="skills.html">Skills</a></li>
+        <li><a href="cv.html">CV</a></li>
         <li><a class="nav-cta" href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </div>
@@ -97,6 +100,41 @@
           </div>
         </aside>
       </div>
+    <!-- CONTACT FORM -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <h2>Send a message</h2>
+          <p>Fill in the form and it'll open your email client with everything ready to send. Alternatively, email me directly at <a href="mailto:mugerivhuthu360@gmail.com">mugerivhuthu360@gmail.com</a>.</p>
+        </div>
+        <form class="contact-card" action="mailto:mugerivhuthu360@gmail.com" method="post" enctype="text/plain" style="max-width:640px;">
+          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px;">
+            <label for="cf-name"><strong>Name</strong></label>
+            <input id="cf-name" name="Name" type="text" required style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit;">
+          </div>
+          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px;">
+            <label for="cf-email"><strong>Email</strong></label>
+            <input id="cf-email" name="Email" type="email" required style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit;">
+          </div>
+          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px;">
+            <label for="cf-subject"><strong>Subject</strong></label>
+            <select id="cf-subject" name="Subject" style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit;">
+              <option>Engineering opportunity</option>
+              <option>Live keys booking</option>
+              <option>Session recording</option>
+              <option>Collaboration</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px; border-bottom:0;">
+            <label for="cf-message"><strong>Message</strong></label>
+            <textarea id="cf-message" name="Message" rows="5" required style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit; resize:vertical;"></textarea>
+          </div>
+          <div class="btn-row" style="margin-top:16px;">
+            <button type="submit" class="btn btn--primary">Send message</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -108,6 +146,7 @@
         <li><a href="engineering.html">Engineering</a></li>
         <li><a href="music.html">Music</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/mugerivhuthu360-ship-it/mugeri-portfolio" target="_blank" rel="noopener">Source</a></li>
       </ul>
     </div>
   </footer>
