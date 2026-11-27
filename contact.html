@@ -9,16 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=7">
   <script src="js/main.js" defer></script>
 <link rel="canonical" href="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/contact.html">
 <meta property="og:title" content="Contact — Mugeri Vhuthuhawe">
 <meta property="og:description" content="Contact Mugeri Vhuthuhawe for engineering opportunities, live keyboard work, session recording and collaborations.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/contact.html">
-<meta property="og:image" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/assets/og-image.png"
+<meta property="og:image" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/assets/og-image.png">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">>
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact — Mugeri Vhuthuhawe">
 <meta name="twitter:description" content="Contact Mugeri Vhuthuhawe for engineering opportunities, live keyboard work, session recording and collaborations."></head>
@@ -55,35 +55,35 @@
             <div class="contact-row">
               <div class="contact-icon" aria-hidden="true">@</div>
               <div>
-                <h3>Email</h3>
+                <h2 class="h3">Email</h2>
                 <p><a href="mailto:mugerivhuthu360@gmail.com">mugerivhuthu360@gmail.com</a></p>
               </div>
             </div>
             <div class="contact-row">
               <div class="contact-icon" aria-hidden="true">EA</div>
               <div>
-                <h3>Engineering &amp; academic</h3>
+                <h2 class="h3">Engineering &amp; academic</h2>
                 <p>Diploma in Electrical Engineering &middot; Walter Sisulu University</p>
               </div>
             </div>
             <div class="contact-row">
               <div class="contact-icon" aria-hidden="true">MU</div>
               <div>
-                <h3>Music</h3>
+                <h2 class="h3">Music</h2>
                 <p>Main AUX Keys &middot; LMAE Sounds &nbsp;|&nbsp; Keys &middot; CRC East London</p>
               </div>
             </div>
             <div class="contact-row">
               <div class="contact-icon" aria-hidden="true">LO</div>
               <div>
-                <h3>Location</h3>
+                <h2 class="h3">Location</h2>
                 <p>South Africa</p>
               </div>
             </div>
             <div class="contact-row">
               <div class="contact-icon" aria-hidden="true">VC</div>
               <div>
-                <h3>Save my contact</h3>
+                <h2 class="h3">Save my contact</h2>
                 <p><a href="mugeri.vcf" download>Download vCard (.vcf)</a> — adds me to your contacts in one tap.</p>
               </div>
             </div>
@@ -107,6 +107,8 @@
           </div>
         </aside>
       </div>
+    </section>
+
     <!-- CONTACT FORM -->
     <section class="section section--soft">
       <div class="container">
@@ -114,18 +116,18 @@
           <h2>Send a message</h2>
           <p>Fill in the form and it'll open your email client with everything ready to send. Alternatively, email me directly at <a href="mailto:mugerivhuthu360@gmail.com">mugerivhuthu360@gmail.com</a>.</p>
         </div>
-        <form class="contact-card" action="mailto:mugerivhuthu360@gmail.com" method="post" enctype="text/plain" style="max-width:640px;">
-          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px;">
-            <label for="cf-name"><strong>Name</strong></label>
-            <input id="cf-name" name="Name" type="text" required style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit;">
+        <form class="contact-card contact-form" action="mailto:mugerivhuthu360@gmail.com" method="post" enctype="text/plain">
+          <div class="contact-row">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="Name" type="text" autocomplete="name" required>
           </div>
-          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px;">
-            <label for="cf-email"><strong>Email</strong></label>
-            <input id="cf-email" name="Email" type="email" required style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit;">
+          <div class="contact-row">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="Email" type="email" autocomplete="email" required>
           </div>
-          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px;">
-            <label for="cf-subject"><strong>Subject</strong></label>
-            <select id="cf-subject" name="Subject" style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit;">
+          <div class="contact-row">
+            <label for="cf-subject">Subject</label>
+            <select id="cf-subject" name="Subject">
               <option>Engineering opportunity</option>
               <option>Live keys booking</option>
               <option>Session recording</option>
@@ -133,11 +135,11 @@
               <option>Other</option>
             </select>
           </div>
-          <div class="contact-row" style="flex-direction:column; align-items:stretch; gap:6px; border-bottom:0;">
-            <label for="cf-message"><strong>Message</strong></label>
-            <textarea id="cf-message" name="Message" rows="5" required style="padding:10px 12px; border-radius:8px; border:1px solid var(--border-strong); background:var(--bg); color:var(--text); font:inherit; resize:vertical;"></textarea>
+          <div class="contact-row" style="border-bottom:0;">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="Message" rows="5" required></textarea>
           </div>
-          <div class="btn-row" style="margin-top:16px;">
+          <div class="btn-row" style="margin:0 0 22px;">
             <button type="submit" class="btn btn--primary">Send message</button>
           </div>
         </form>
@@ -171,15 +173,26 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span data-year>2026</span> Mugeri Vhuthuhawe. Built with care.</p>
-      <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="engineering.html">Engineering</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://github.com/mugerivhuthu360-ship-it/mugeri-portfolio" target="_blank" rel="noopener">Source</a></li>
-      </ul>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">Mugeri<span>.</span></a>
+          <p>Electrical Engineering student and resident keys player, South Africa. Open to placements, live keys work, session recording and technical collaborations.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="engineering.html">Engineering</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/mugerivhuthu360-ship-it/mugeri-portfolio" target="_blank" rel="noopener">Source</a></li>
+        </ul>
+      </div>
+      <div class="footer-colophon">
+        <span>&copy; <span data-year>2026</span> Mugeri Vhuthuhawe</span>
+        <span>Built by hand &middot; HTML, CSS, a little JS</span>
+      </div>
     </div>
   </footer>
 </body>

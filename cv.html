@@ -9,15 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=7">
   <link rel="canonical" href="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/cv.html">
   <meta property="og:title" content="CV — Mugeri Vhuthuhawe">
   <meta property="og:description" content="Curriculum vitae of Mugeri Vhuthuhawe — Electrical Engineering student, live keys player and music technology professional.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/cv.html">
-  <meta property="og:image" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/assets/og-image.png"
+  <meta property="og:image" content="https://mugerivhuthu360-ship-it.github.io/mugeri-portfolio/assets/og-image.png">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">>
+<meta property="og:image:height" content="630">
   <style>
     @media print {
       body { background: #fff !important; color: #111 !important; }
@@ -48,6 +48,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">Mugeri<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation" aria-controls="site-nav">&#9776;</button>
       <ul class="nav-links" id="site-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -164,15 +165,26 @@
     </section>
   </main>
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span data-year>2026</span> Mugeri Vhuthuhawe. Built with care.</p>
-      <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="engineering.html">Engineering</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://github.com/mugerivhuthu360-ship-it/mugeri-portfolio" target="_blank" rel="noopener">Source</a></li>
-      </ul>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">Mugeri<span>.</span></a>
+          <p>Electrical Engineering student and resident keys player, South Africa. Open to placements, live keys work, session recording and technical collaborations.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="engineering.html">Engineering</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/mugerivhuthu360-ship-it/mugeri-portfolio" target="_blank" rel="noopener">Source</a></li>
+        </ul>
+      </div>
+      <div class="footer-colophon">
+        <span>&copy; <span data-year>2026</span> Mugeri Vhuthuhawe</span>
+        <span>Built by hand &middot; HTML, CSS, a little JS</span>
+      </div>
     </div>
   </footer>
   <script src="js/main.js" defer></script>

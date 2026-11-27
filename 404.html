@@ -4,18 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
+  <meta name="description" content="That page doesn't exist. Return to Mugeri Vhuthuhawe's portfolio home page for engineering, music and contact details.">
   <title>Page not found — Mugeri Vhuthuhawe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">Mugeri<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation" aria-controls="site-nav">&#9776;</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </header>
   <main id="main">
@@ -32,8 +45,23 @@
     </section>
   </main>
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span data-year>2026</span> Mugeri Vhuthuhawe. Built with care.</p>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">Mugeri<span>.</span></a>
+          <p>That page isn't here. The work, the music and the contact details are all one click away.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="engineering.html">Engineering</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-colophon">
+        <span>&copy; <span data-year>2026</span> Mugeri Vhuthuhawe</span>
+        <span>Page not found &middot; 404</span>
+      </div>
     </div>
   </footer>
   <script src="js/main.js" defer></script>
