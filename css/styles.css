@@ -819,6 +819,23 @@ figure { margin: 0; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 8px 22px; list-style: none; padding: 0; margin: 0; justify-content: flex-end; }
 .footer-links a { color: var(--stage-muted); font-size: 0.84rem; }
 .footer-links a:hover { color: var(--on-stage); text-decoration: none; }
+.footer-social {
+  list-style: none;
+  margin: 26px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--stage-line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+.footer-social a {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stage-muted);
+}
+.footer-social a:hover { color: var(--on-stage); text-decoration: none; }
 .footer-colophon {
   font-family: var(--font-mono);
   font-size: 0.68rem;
